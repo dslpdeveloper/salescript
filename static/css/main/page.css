@@ -1,0 +1,39 @@
+
+.main {
+    display: block;
+    background-color: #141d27;
+    background-image: url(../../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+.navbar, footer {
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.37) !important;
+}
+.slide {
+    padding: 50px 80px 50px 80px;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.slide .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.scripts {
+    background: rgba(0, 0, 0, 0.37);
+}
+
+.slide .row .picture-block {
+    width: 440px;
+    padding-top: 20px;
+}
+.slide .row .text-block {
+    flex: 1;
+    min-width: 400px;
+}

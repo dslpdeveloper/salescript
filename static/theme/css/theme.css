@@ -1,0 +1,17 @@
+.footer {
+    height: 40px;
+    background-color: #4e5d6c;
+    padding: 5px 0 0 5px;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+}
+
+.footer > span {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.scenario-breadcrumb {
+}

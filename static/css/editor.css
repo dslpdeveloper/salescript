@@ -1,0 +1,82 @@
+.editor-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+    min-width: 0;
+}
+
+.editor {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor-paper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+}
+
+
+.editor-viewport-scroller {
+    flex: 1;
+    overflow: scroll;
+}
+
+.editor-sidebar {
+    padding-left: 30px;
+    min-width: 290px;
+}
+
+svg.back {
+    display: block;
+    min-width: 100%;
+    min-height: 1000px;
+    background: white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHUlEQVQYV2NkYGAwBuKzQIwXMBJSAJMfVUidcAQAnUQBC6jEGBUAAAAASUVORK5CYII=');
+}
+
+text, g.label {
+    cursor: hand;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #ebebeb;
+    fill: #ebebeb;
+    font-weight: normal;
+}
+
+.edgePath path.path {
+    stroke: #333;
+    fill: none;
+    stroke-width: 1px;
+}
+
+.selected text, .selected g.label {
+    color: #000;
+    fill: #000;
+}
+
+.node rect,
+.node ellipse {
+    stroke: #000;
+    fill: #4e5d6c;
+    stroke-width: 1px;
+}
+
+.selected rect,
+.selected ellipse {
+    fill: #40cbff;
+}
+
+g.edgePath.selected,
+g.edgePath.selected path.path{
+    stroke: #40cbff;
+    stroke-width: 1.5px;
+}
+
+g.edgePath.selected marker {
+    fill: #40cbff;
+}

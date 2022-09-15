@@ -1,0 +1,8 @@
+table.table-permissions .col-tools {
+    padding-top: 10px;
+}
+
+table.table-permissions .col-permission,
+table.table-permissions .col-email {
+    max-width: 220px;
+}
