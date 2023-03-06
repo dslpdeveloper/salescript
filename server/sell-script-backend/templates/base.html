@@ -15,7 +15,7 @@
     {% compress css %}
     {% block css-layout %}<link href="{% static "theme/css/flex-layout.css" %}" rel="stylesheet">{% endblock %}
     {% endcompress %}
-    <title>{% block title %}SaleScript.gift: {% block title-subject %}{% trans "Main Page" %}{% endblock %}{% endblock %}</title>
+    <title>{% block title %}SaleScript: {% block title-subject %}{% trans "Main Page" %}{% endblock %}{% endblock %}</title>
     <meta property="og:image" content="https://salescript.gift/static/images/scr.jpg">
     <link rel="image_src" href="https://salescript.gift/static/images/scr.jpg">
     {% block append-head %}{% endblock %}
@@ -46,7 +46,7 @@
             <a class="navbar-brand" href="/">
                 <img src="{% static "images/favicons/favicon-32x32.png" %}"
                      height="32" width="32" style="display: inline; margin-top: -7px;">
-                 {% block brand %}SaleScript.gift{% endblock %}
+                 {% block brand %}SaleScript{% endblock %}
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -99,7 +99,7 @@
 {% endblock %}
 {#Sicky footer#}
 <footer class="footer">
-<span>{% trans "Sales scripts" %} ©SaleScript.gift 2016. {% trans "All rights reserved. Please see the video manual on the main page." %}. </span><!-- Link to donate page -->
+<span>{% trans "Sales scripts" %} ©SaleScript.gift 2023. {% trans "All rights reserved. Please see the video manual on the main page." %}. </span><!-- Link to donate page -->
 
 </footer>
 {#End footer#}
