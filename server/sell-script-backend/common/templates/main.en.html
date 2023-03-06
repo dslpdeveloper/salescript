@@ -6,9 +6,9 @@
     <link href="{% static "css/main/page.css" %}"
           rel="stylesheet">
 {% endblock %}
-{% block brand %}{% trans "Sales scripts. Free designer - SaleScript.gift" %}{% endblock %}
-{% block title %}Sales script for free. SaleScript.Gift designer{% endblock %}
-{% block head-description %}Sales scripts for free, create your own conversation scenario.{% endblock %}
+{% block brand %}{% trans "Sales scripts." %}{% endblock %}
+{% block title %}Sales script{% endblock %}
+{% block head-description %}Sales scripts, create your own conversation scenario.{% endblock %}
 {% block content %}
     <div class="mainpage">
         <div class="slide about">
@@ -17,39 +17,10 @@
 
                 <div class="picture-block">
                 </div>
-                <div class="text-block">
-
-                    <h1>Free sales scripts generator</h1>
-
-                    <p>Welcome to the open beta testing of sales scripts constructor
-                        SaleScript.gift.
-                        Important: see the video manual on this page before you
-                        start work.</p>
-                    <p>
-                        The good news: sales scripts generator will remain free
-                        forever. With your help, we successfully improve the functionality,
-                        and will soon begin work on expanding the capacity of our project,
-                        to create from it a full-fledged cold sales lead generation
-                        machine and even more.
-                        However, this is only the beginning. We still have a lot of interesting ideas
-                        which we hope to bring to life.</p>
-
-                    <p>To do this we need your help. Any comments about bugs and
-                        shortcomings of the system, help with proper localization,
-                        you can always send us through our Facebook page.
-                        We'll be very grateful. You can also support the project
-                        financially on a purely voluntary basis.</p>
-
-                </div>
             </div>
         </div>
         <div class="slide scripts">
           <div class="row">
-            <div class="picture-block">
-                {# Fb groups #}
-                {% include "fb_groups.inc.html" %}
-                {# End Fb groups #}
-            </div>
             <h2>What is conversations (sales) scripts</h2>
             <p>Scripts of conversations, often called sales scripts - a detailed
                 scenario of conversation on the phone. It significantly reduces
@@ -105,10 +76,7 @@
             <p>Log on and make your first sales script! Start your way to success
                 absolutely free without any limitations.</p>
             <a href="{% url 'clients:register' %}?next={% url 'clients:dashboard' %}"
-               class="btn btn-success">Register</a> or use social networks login: {% social_login %}
-            {#Sharebuttons#}
-            {% include "share_buttons.inc.html" %}
-            {#End Sharebuttons#}
+               class="btn btn-success">Register</a>
         </div>
     </div>
 {% endblock %}

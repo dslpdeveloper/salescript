@@ -1,5 +1,5 @@
 FROM python:3.5-onbuild
-RUN apt-get update && apt-get -y install gettext \
+RUN apt-get update && apt-get -y install gettext --force-yes \
      && python manage.py compilemessages
 CMD python manage.py migrate --noinput; \
 	python manage.py collectstatic --noinput; \ 
